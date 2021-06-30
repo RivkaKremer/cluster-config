@@ -14,16 +14,16 @@ spec:
     - ReadWriteMany
   hostPath:
     path: "/app/counter-value.ini"
----
-apiVersion: v1
-kind: PersistentVolumeClaim
-metadata:
-  name: counter-pv-claim
-  namespace: prod
-spec:
-  storageClassName: local
-  accessModes:
-    - ReadWriteMany
-  resources:
-    requests:
-      storage: 2Gi
+#---
+#apiVersion: v1
+#kind: PersistentVolumeClaim
+#metadata:
+#  name: counter-pv-claim
+#  namespace: prod
+#spec:
+#  storageClassName: local
+#  accessModes:
+#    - ReadWriteMany
+#  resources:
+#    requests:
+#      storage: 2Gi
