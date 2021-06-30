@@ -28,16 +28,9 @@ spec:
       labels:
         app: counter-service
     spec:
-      volumes:
-        - name: counter-pv-storage
-          persistentVolumeClaim:
-            claimName: counter-pv-claim
       containers:
         - name: counter-service
           image: 630943284793.dkr.ecr.us-west-1.amazonaws.com/counter-service:0.0.154 # {"$imagepolicy": "flux-system:counter-service"}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
-          volumeMounts:
-            - mountPath: "/app/counter-volume.ini"
-              name: counter-pv-storage
