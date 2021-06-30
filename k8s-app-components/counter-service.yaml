@@ -30,7 +30,7 @@ spec:
     spec:
       containers:
         - name: counter-service
-          image: 630943284793.dkr.ecr.us-west-1.amazonaws.com/counter-service:0.0.154 # {"$imagepolicy": "flux-system:counter-service"}
+          image: 630943284793.dkr.ecr.us-west-1.amazonaws.com/counter-service:0.0.605 # {"$imagepolicy": "flux-system:counter-service"}
           imagePullPolicy: Always
           ports:
             - containerPort: 80
